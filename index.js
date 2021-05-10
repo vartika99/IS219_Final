@@ -44,9 +44,6 @@ if (app.get("env") === "production") {
  * Passport Configuration
  */
 
-/**
- * Passport Configuration
- */
 
 const strategy = new Auth0Strategy(
   {
