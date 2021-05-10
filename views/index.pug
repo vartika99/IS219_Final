@@ -2,16 +2,15 @@ extends layout
 
 block layout-content
   div.View.WelcomeView
-    h1.Banner IS219
+    h1.Banner IS219 Project
     div.Message
       div.Title
         h3 Vartika Patel
-        h1 Final Project
-      span.Details Access the WHATABYTE Team Portal
+      span.Details Login to access the Cities Database
     div.NavButtons
       if isAuthenticated
         a(href="/user")
-          div.NavButton Just dive in!
+          div.NavButton Profile
         a(href="/db")
           div.NavButton Database
       else
