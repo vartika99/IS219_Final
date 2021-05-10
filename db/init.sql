@@ -2,8 +2,8 @@ CREATE DATABASE citiesData;
 use citiesData;
 
 CREATE TABLE IF NOT EXISTS tblCitiesImport (
-                                               `id` int AUTO_INCREMENT,
-                                               `fldName` VARCHAR(21) CHARACTER SET utf8,
+    `id` int AUTO_INCREMENT,
+    `fldName` VARCHAR(21) CHARACTER SET utf8,
     `fldLat` NUMERIC(6, 4),
     `fldLong` NUMERIC(7, 4),
     `fldCountry` VARCHAR(19) CHARACTER SET utf8,
