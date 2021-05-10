@@ -1,0 +1,29 @@
+extends layout
+block layout-content
+    div.View.UserView
+        div.Message
+            div.Title
+                h1 Cities Data
+            table.table.table-striped
+                thead
+                tr
+                    th Name
+                    th Lat
+                    th Long
+                    th Country
+                    th Abbreviation
+                    th CapitalStatus
+                    th Population
+                tbody
+                each n in citiesjson
+                    tr
+                        td= n.fldName
+                        td= n.fldLat
+                        td= n.fldLong
+                        td= n.fldCountry
+                        td= n.fldAbbreviation
+                        td= n.fldCapitalStatus
+                        td= n.fldPopulation
+        div.NavButtons
+            a(href="/logout")
+                div.NavButton Log out
